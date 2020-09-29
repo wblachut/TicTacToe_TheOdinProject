@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>|✖️| PROJECT: TIC TAC TOE by WB (TheOdinProject)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto|Open+Sans">
+
+</head>
+<body>
+  <div class="back-div">
+    <div class="main-div">
+      <div class="title"> Tic Tac Toe </div>
+          <div class="new-game-window">
+              <ul>
+                <li> Player One: <input type="text" required placeholder="1st Plyer's Name" id="player-one-txt">
+                      <label for="player-one-color" class="player-color"></label>
+                      X <input type="color" id="player-one-color"> 
+                </li>
+                <li> Player Two: <input type="text" required placeholder="2nd Player's Name" id="player-two-txt">
+                  <label for="player-one-color" class="player-color"></label>
+                      O <input type="color" id="player-two-color"> 
+                </li>
+                <br>
+                <li> <input type="checkbox" id="checkbox-ai" class="checkbox-play-ai">
+                  <label for="checkbox-ai" class="checkbox-play-ai"></label> <span class="ai"> play vs AI </span> <br>
+                 <br>   
+                  <div>
+                  <button class="start-game-button">Start </button>
+                  </div>
+                </ul>
+          </div >
+             
+        </div>
+      <button class="new-game-button">New Game</button> 
+    </div>
+  </div>
+
+
+<script>
+
+const ticTacToeApp = {
+
+  init: function() {
+    this.catcheDOM();
+    this.bindEvents();
+    this.game();
+  },
+      catcheDOM: function() {
+      
+      },
+
+      bindEvents: function() {
+        
+      }    
+  }
+
+
+</script>
+
+
+</body>
+</html>
