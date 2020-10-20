@@ -2,39 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>|✖️| PROJECT: TIC TAC TOE by WB (TheOdinProject)</title>
+  <title>TIC TAC TOE PROJECT by WB (TheOdinProject)</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto|Open+Sans">
 
 </head>
 <body>
-  <div class="back-div">
     <div class="main-div">
       <div class="title"> Tic Tac Toe </div>
           <div class="new-game-window">
+            <form id='new-game-form'>
               <ul>
-                <li> Player One: <input type="text" required placeholder="1st Plyer's Name" id="player-one-txt">
-                      <label for="player-one-color" class="player-color"></label>
-                      X <input type="color" id="player-one-color"> 
-                </li>
-                <li> Player Two: <input type="text" required placeholder="2nd Player's Name" id="player-two-txt">
-                  <label for="player-one-color" class="player-color"></label>
-                      O <input type="color" id="player-two-color"> 
-                </li>
-                <br>
-                <li> <input type="checkbox" id="checkbox-ai" class="checkbox-play-ai">
-                  <label for="checkbox-ai" class="checkbox-play-ai"></label> <span class="ai"> play vs AI </span> <br>
-                 <br>   
-                  <div>
-                  <button class="start-game-button">Start </button>
-                  </div>
-                </ul>
-          </div >
-             
+                  <li>
+                  <label for="player-one-input" class="player-color"> Player One: </label>
+                     <input type="text" required placeholder="" id="player-one-input">  x
+                  </li>
+                  <li id="p2-li">
+                  <label for="player-two-input" class="player-color"> Player Two: </label>
+                     <input type="text" required placeholder="" id="player-two-input">  <b>o</b> 
+                  </li>
+                  <br>
+                  <li>
+                    <input type="checkbox" id="checkbox-ai" class="checkbox-play-ai">
+                    <label for="checkbox-ai" class="checkbox-play-ai"></label> <span class="ai"> play vs AI </span> <br>
+                    <br>
+                    <div>
+                      <button class="start-game-button">Start </button>
+                    </div>
+                  </ul>
+                  </form>
+          </div>
+           <div>  
+          <button class="new-game-button">New Game</button> 
         </div>
-      <button class="new-game-button">New Game</button> 
     </div>
-  </div>
   <script src="index.js"></script>
 
 
