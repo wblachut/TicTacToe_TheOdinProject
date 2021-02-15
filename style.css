@@ -175,7 +175,6 @@ input.checkbox-play-ai:checked + label:before {
   margin: 2px;
   color: var(--accentMain);
   background-color: rgba(0, 160, 107, 0.11);
-  /* background: rgba(3, 3, 46, 0.3); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,12 +182,15 @@ input.checkbox-play-ai:checked + label:before {
   font-weight: 800;
 }
 
+.game-cell:hover {
+  background-color: rgba(0, 160, 107, 0.2);
+}
+
 .custom-shape-divider-bottom-1606486492 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  /* overflow: hidden; */
   line-height: 0;
   transform: rotate(180deg);
 }
